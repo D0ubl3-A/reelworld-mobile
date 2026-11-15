@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ReelWorld</string>
+    <string name="splash_title">ReelWorld GO</string>
+    <string name="splash_tagline">Opening reelworld.illcoai.tech</string>
+    <string name="offline_title">Signal Lost</string>
+    <string name="offline_subtitle">We could not reach ReelWorld GO right now. Check your connection and try again.</string>
+    <string name="error_title">Unable to Load Page</string>
+    <string name="error_ssl_message">A secure connection to this page could not be verified.</string>
+    <string name="action_retry">Try Again</string>
+    <string name="action_go_home">Return Home</string>
+    <string name="action_open_browser">Open in Browser</string>
+    <string name="cd_toggle_controls">Toggle browser controls</string>
+    <string name="cd_back">Go back</string>
+    <string name="cd_forward">Go forward</string>
+    <string name="cd_reload">Reload page</string>
+    <string name="cd_home">Go to ReelWorld home</string>
+    <string name="cd_share">Share current page</string>
+    <string name="cd_open_browser">Open in external browser</string>
+    <string name="cd_offline_illustration">Fishing bobber and reel drifting on night water with lost sonar signal</string>
+    <string name="cd_brand_emblem">ReelWorld GO leaping bass and fishing reel logo</string>
+    <string name="share_chooser_title">Share link</string>
+    <string name="download_started">Download started…</string>
+    <string name="external_link_error">No app available to open this link</string>
+    <string name="ssl_blocked_notice">Blocked an insecure SSL connection</string>
+</resources>

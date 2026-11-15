@@ -1,0 +1,6 @@
+{
+  "name": "ReelWorld",
+  "description": "Android WebView app for ReelWorld (reelworld.illcoai.tech) with edge-to-edge cinema UI, offline recovery, fullscreen video, and file upload support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
