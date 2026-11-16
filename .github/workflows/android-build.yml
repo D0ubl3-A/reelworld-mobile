@@ -1,7 +1,7 @@
 name: Android release bundle
 on:
   push:
-    branches: [main]
+    branches: [reelworld-go-mobile]
   workflow_dispatch:
 permissions:
   contents: read
@@ -26,7 +26,7 @@ jobs:
         run: gradle --no-configuration-cache -PunsignedRelease=true :app:testDebugUnitTest :app:bundleRelease
       - uses: actions/upload-artifact@v4
         with:
-          name: ReelWorld-1.0.1-code2-UNSIGNED-AAB
+          name: ReelWorld-GO-Mobile-1.0.0-code1-UNSIGNED-AAB
           path: app/build/outputs/bundle/release/*.aab
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
