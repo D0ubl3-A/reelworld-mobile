@@ -46,7 +46,7 @@ class ReelWorldCujTest {
 
         // Splash is initially visible while loading
         composeTestRule.onNodeWithTag("splash_logo").assertIsDisplayed()
-        composeTestRule.onNodeWithText("ReelWorld GO").assertIsDisplayed()
+        composeTestRule.onNodeWithText("ReelWorld GO Mobile").assertIsDisplayed()
         composeTestRule.onNodeWithText("Opening reelworld.illcoai.tech").assertIsDisplayed()
         composeTestRule.onNodeWithTag("reelworld_webview").assertExists()
 
