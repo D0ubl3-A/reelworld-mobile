@@ -23,14 +23,7 @@ jobs:
       - name: Install pinned Android SDK
         run: sdkmanager 'platforms;android-36.1' 'build-tools;36.0.0'
       - name: Build unsigned release bundle and run unit tests
-        run: |
-          cat > "$RUNNER_TEMP/unsigned.gradle" <<'INIT'
-          gradle.projectsEvaluated {
-            def app = gradle.rootProject.findProject(':app')
-            app.android.buildTypes.release.signingConfig = null
-          }
-          INIT
-          gradle --no-configuration-cache -I "$RUNNER_TEMP/unsigned.gradle" :app:testDebugUnitTest :app:bundleRelease
+        run: gradle --no-configuration-cache -PunsignedRelease=true :app:testDebugUnitTest :app:bundleRelease
       - uses: actions/upload-artifact@v4
         with:
           name: ReelWorld-1.0.1-code2-UNSIGNED-AAB
